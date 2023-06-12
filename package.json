@@ -1,0 +1,21 @@
+{
+  "name": "02-api-rest-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx watch src/server.ts" 
+  },
+  "keywords": [],
+  "author": "Gabriel Maia",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "fastify": "^4.17.0",
+    "httpie": "^1.1.2"
+  }
+}
