@@ -2,7 +2,7 @@ import 'dotenv/config'// Importando a dotenv, ela basicamente lê as variáveis 
 //process.env
 import {z} from 'zod'
 
-const envSchema = z.object({// Abre um objeto pois process.env.DATABASE_URL está acessando um obj
+const envSchema = z.object({// Abre um objeto pois process.env.DATABASE_URL e stá acessando um obj
   NODE_ENV: z.enum(['development', 'test', 'production']),
   DATABASE_URL: z.string(),
   PORT: z.number().default(3333)
