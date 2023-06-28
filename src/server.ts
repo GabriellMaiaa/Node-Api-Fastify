@@ -1,6 +1,7 @@
 import fastify from 'fastify'
 import { knex } from './database'
 import crypto from 'node:crypto'//Extensão interna do node
+import { env } from './env';
 
 const app = fastify();
 
@@ -18,7 +19,7 @@ app.get('/hello', async () => {
 app
   .listen({
     // O listen retorna uma promise, por isso precisa do Then
-    port: 3333,
+    port: env.PORT,// agora você importa normalmente como se fosse uma var
   })
   .then(() => {
     console.log('Http server is running')
